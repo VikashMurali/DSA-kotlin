@@ -16,15 +16,15 @@ Welcome to **Data Structures and Algorithms in Kotlin**! This repository contain
 ## 📂 **Project Structure**
 ```
 📁 src
+├── SearchAlgorithms
+│   ├── BinarySearch.kt
+│   ├── LinearSearch.kt
 ├── SortingAlgorithms
 │   ├── BubbleSort.kt
 |   ├── SelectionSort.kt
 |   ├── InsertionSort.kt
 |   ├── QuickSort.kt
 │   ├── MergeSort.kt
-├── SearchAlgorithms
-│   ├── BinarySearch.kt
-│   ├── LinearSearch.kt
 │── README.md
 ```
 
