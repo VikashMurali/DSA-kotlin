@@ -1,4 +1,4 @@
-package SortingAlgorirthms
+package sortingAlgorithms
 
 /**
  * Bubble Sort
