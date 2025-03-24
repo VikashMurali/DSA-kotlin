@@ -16,10 +16,13 @@ fun main() {
     print(linearSearch(arr, 5))
 }
 
-fun linearSearch(arr: IntArray, target: Int): Int {
-    for(i in arr.indices){
-        if(arr[i] == target) {
-            return i
+fun linearSearch(arr: IntArray, t: Int): Int{
+    if(arr.isEmpty()) {
+        return -1
+    }
+    arr.forEachIndexed { index, i ->
+        if(i==t){
+            return index
         }
     }
     return -1
