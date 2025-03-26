@@ -17,7 +17,15 @@ package searchAlgorithms
 
 fun main(){
     val arr = intArrayOf(1, 3, 4, 5, 7, 8, 12)
-    print(binarySearch(arr, 7))
+    print(binarySearchUsingRecursion(arr, 11, 0, arr.size - 1))
+}
+
+fun binarySearchUsingRecursion(arr: IntArray, target: Int, start: Int, end: Int): Int {
+    if (start > end) return -1
+    val mid = start + (end - start) / 2
+    if(arr[mid] == target) return mid
+    else if(arr[mid] < target) return binarySearchUsingRecursion(arr, target, mid + 1, end)
+    return binarySearchUsingRecursion(arr, target, start, mid - 1)
 }
 
 fun binarySearch(arr: IntArray, target: Int): Int {
