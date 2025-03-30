@@ -21,6 +21,7 @@ Welcome to **Data Structures and Algorithms in Kotlin**! This repository contain
 │   ├── LinearSearch.kt
 ├── SortingAlgorithms
 │   ├── BubbleSort.kt
+│   ├── CyclicSort.kt
 |   ├── SelectionSort.kt
 |   ├── InsertionSort.kt
 |   ├── QuickSort.kt
