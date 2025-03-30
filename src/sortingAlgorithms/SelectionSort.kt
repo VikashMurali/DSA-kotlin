@@ -15,8 +15,22 @@ package sortingAlgorithms
  */
 fun  main(){
     val arr = intArrayOf(3,16,4,2,5)
-    print(selectionSort(arr).contentToString())
+    selectionSortUsingRecursion(arr, arr.size , 0,0)
+    print(arr.contentToString())
 }
+
+fun selectionSortUsingRecursion(arr: IntArray, r: Int, c: Int, max: Int) {
+    if(r == 0) return
+    else if(c < r)  {
+        if(arr[c] > arr[max]) selectionSortUsingRecursion(arr, r, c+1, c)
+        else selectionSortUsingRecursion(arr, r, c+1, max)
+    }
+    else {
+        swap(arr, max, r-1)
+        selectionSortUsingRecursion(arr, r-1, 0, 0)
+    }
+}
+
 
 fun selectionSort(arr: IntArray): IntArray {
     for(i in arr.indices) {
