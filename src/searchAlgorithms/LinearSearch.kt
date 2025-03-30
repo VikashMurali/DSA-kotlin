@@ -13,7 +13,13 @@ package searchAlgorithms
 
 fun main() {
     val arr = intArrayOf(5, 8, 2, 0, 3, 9, 7)
-    print(linearSearch(arr, 5))
+    print(linearSearchUsingRecursion(arr, 17))
+}
+
+fun linearSearchUsingRecursion(arr: IntArray, target: Int, index: Int = 0): Int {
+    if(index == arr.size) return -1
+    else if(arr[index] == target) return index
+    return linearSearchUsingRecursion(arr, target, index + 1)
 }
 
 fun linearSearch(arr: IntArray, t: Int): Int{
