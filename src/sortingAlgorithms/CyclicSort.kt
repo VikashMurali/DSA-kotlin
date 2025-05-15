@@ -13,8 +13,18 @@ package sortingAlgorithms
  */
 
 fun main() {
-    val arr = intArrayOf(3,1,4,5,2)
-    print(cyclicSort(arr).contentToString())
+    val arr = intArrayOf(1,3,4,5)
+    print(findMissingNo(arr))
+}
+
+fun findMissingNo(arr: IntArray):  Int {
+    val n = arr.size + 1
+    println(n)
+    val sum = (n*(n + 1)) / 2
+    println(sum)
+    val sumOfArray = arr.sum()
+    println(sumOfArray)
+    return sum - sumOfArray
 }
 
 fun cyclicSort(arr: IntArray): IntArray {

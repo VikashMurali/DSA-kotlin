@@ -12,8 +12,12 @@ package searchAlgorithms
  */
 
 fun main() {
-    val arr = intArrayOf(5, 8, 2, 0, 3, 9, 7)
-    print(linearSearchUsingRecursion(arr, 17))
+    val arr = arrayOf(
+        intArrayOf(4, 6, 8, 2),
+        intArrayOf(44, 66, 18, 32),
+        intArrayOf(14, 12),
+    )
+    print(linearSearchIn2DArray(arr, 46).contentToString())
 }
 
 fun linearSearchUsingRecursion(arr: IntArray, target: Int, index: Int = 0): Int {
@@ -32,4 +36,13 @@ fun linearSearch(arr: IntArray, t: Int): Int{
         }
     }
     return -1
+}
+
+fun linearSearchIn2DArray(arr: Array<IntArray>, target: Int): IntArray {
+    arr.forEachIndexed { rowIndex, rowValue ->
+        rowValue.forEachIndexed { colIndex, colValue ->
+            if(colValue == target) return intArrayOf(rowIndex, colIndex)
+        }
+    }
+    return intArrayOf(-1, -1)
 }
