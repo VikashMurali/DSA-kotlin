@@ -18,9 +18,9 @@ Welcome to **Data Structures and Algorithms in Kotlin**! This repository contain
 📁 src
 ├── DataStructures
 │   ├── LinkedList
-│   ├──  ├──LinkedList.kt
+│   ├── ├──LinkedList.kt
 │   ├── Tree
-│   ├──  ├──BinaryTree.kt
+│   ├── ├──BinaryTree.kt
 │   ├── List.kt
 │   ├── Map.kt
 │   ├── Set.kt
